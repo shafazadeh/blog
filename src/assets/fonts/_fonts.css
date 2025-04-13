@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'Light';
+	src: local('IRANSansLight'), url('/fonts/IRANSans/IRANSansFaNum_Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Black';
+	src: local('IRANSansBlack'), url('/fonts/IRANSans/IRANSansFaNum_Black.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Bold';
+	src: local('IRANSansBold'), url('/fonts/IRANSans/IRANSansFaNum_Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Medium';
+	src: local('IRANSansMedium'), url('/fonts/IRANSans/IRANSansFaNum_Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'UltraLight';
+	src: local('IRANSansUltraLight'),
+		url('/fonts/IRANSans/IRANSansFaNum_UltraLight.ttf') format('truetype');
+}
