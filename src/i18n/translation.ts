@@ -1,12 +1,13 @@
-import { siteConfig } from "../config";
-import type I18nKey from "./i18nKey";
-import { en } from "./languages/en";
-import { es } from "./languages/es";
-import { ja } from "./languages/ja";
-import { ko } from "./languages/ko";
-import { th } from "./languages/th";
-import { zh_CN } from "./languages/zh_CN";
-import { zh_TW } from "./languages/zh_TW";
+import { siteConfig } from '../config';
+import type I18nKey from './i18nKey';
+import { en } from './languages/en';
+import { es } from './languages/es';
+import { ja } from './languages/ja';
+import { ko } from './languages/ko';
+import { th } from './languages/th';
+import { zh_CN } from './languages/zh_CN';
+import { zh_TW } from './languages/zh_TW';
+import { fa } from './languages/fa';
 
 export type Translation = {
 	[K in I18nKey]: string;
@@ -17,6 +18,7 @@ const defaultTranslation = en;
 const map: { [key: string]: Translation } = {
 	es: es,
 	en: en,
+	fa: fa,
 	en_us: en,
 	en_gb: en,
 	en_au: en,
@@ -35,6 +37,6 @@ export function getTranslation(lang: string): Translation {
 }
 
 export function i18n(key: I18nKey): string {
-	const lang = siteConfig.lang || "en";
+	const lang = siteConfig.lang || 'en';
 	return getTranslation(lang)[key];
 }

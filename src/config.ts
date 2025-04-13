@@ -1,27 +1,22 @@
-import type {
-	LicenseConfig,
-	NavBarConfig,
-	ProfileConfig,
-	SiteConfig,
-} from "./types/config";
-import { LinkPreset } from "./types/config";
+import type { LicenseConfig, NavBarConfig, ProfileConfig, SiteConfig } from './types/config';
+import { LinkPreset } from './types/config';
 
 export const siteConfig: SiteConfig = {
-	title: "با عشق کد می‌زنم، با رؤیا محصول می‌سازم!",
-	subtitle: "Demo Site",
-	lang: "en", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
+	title: 'با عشق کد می‌زنم، با رؤیا محصول می‌سازم!',
+	subtitle: 'Demo Site',
+	lang: 'fa', // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
 	themeColor: {
 		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
 		fixed: false, // Hide the theme color picker for visitors
 	},
 	banner: {
 		enable: true,
-		src: "./assets/images/banner.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
+		src: './assets/images/banner.png', // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		position: 'center', // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
 			enable: false, // Display the credit text of the banner image
-			text: "", // Credit text to be displayed
-			url: "", // (Optional) URL link to the original artwork or artist's page
+			text: '', // Credit text to be displayed
+			url: '', // (Optional) URL link to the original artwork or artist's page
 		},
 	},
 	toc: {
@@ -52,26 +47,25 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/demo-avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "نرگس شفازاده",
-	bio: "یه برنامه‌نویس خلاق و عاشق چالش‌ام که از حل مسائل پیچیده لذت می‌برم و الان دارم با ذوق مدیریت پروژه رو یاد می‌گیرم تا ایده‌هام رو به واقعیت تبدیل کنم.",
+	avatar: 'assets/images/demo-avatar.png', // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	name: 'نرگس شفازاده',
+	bio: ' برنامه‌نویس خلاق و عاشق چالش‌ام که از حل مسائل پیچیده لذت می‌برم و الان دارم با ذوق مدیریت پروژه رو یاد می‌گیرم تا ایده‌هام رو به واقعیت تبدیل کنم.',
 	links: [
-	
 		{
-			name: "Steam",
-			icon: "fa6-brands:linkedin",
-			url: "https://www.linkedin.com/in/narges-shafazadeh/",
+			name: 'Steam',
+			icon: 'fa6-brands:linkedin',
+			url: 'https://www.linkedin.com/in/narges-shafazadeh/',
 		},
 		{
-			name: "GitHub",
-			icon: "fa6-brands:github",
-			url: "https://github.com/shafazadeh",
+			name: 'GitHub',
+			icon: 'fa6-brands:github',
+			url: 'https://github.com/shafazadeh',
 		},
 	],
 };
 
 export const licenseConfig: LicenseConfig = {
 	enable: false,
-	name: "",
-	url: "",
+	name: '',
+	url: '',
 };
