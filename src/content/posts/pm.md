@@ -1,6 +1,6 @@
 ---
 title: مدیر محصول دیجیتال کیست خلاصه ای از کتاب (Cracking the PM Career)
-published: 2025-04-15
+published: 2024-10-15
 description: 'Cracking the PM Career مختصری از کتاب '
 image: ''
 tags: [productManagerSkill]

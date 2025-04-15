@@ -1,6 +1,6 @@
 ---
 title: zod
-published: 2025-04-13
+published: 2024-04-13
 description: ''
 image: ''
 tags: [typescript, validation]

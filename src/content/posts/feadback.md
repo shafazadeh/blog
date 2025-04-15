@@ -1,6 +1,6 @@
 ---
 title: فیدبک مؤثر
-published: 2025-04-15
+published: 2024-03-01
 description: ''
 image: './image.png'
 tags: [feadback]
