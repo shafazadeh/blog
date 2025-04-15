@@ -2,7 +2,7 @@
 title: مدیر محصول دیجیتال کیست خلاصه ای از کتاب (Cracking the PM Career)
 published: 2024-10-15
 description: 'Cracking the PM Career مختصری از کتاب '
-image: ''
+image: 'https://miro.medium.com/v2/resize:fit:787/1*15fK33QXqXz5i7MP7-el0A.png'
 tags: [productManagerSkill]
 category: 'product managment'
 draft: false
