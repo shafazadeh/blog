@@ -1,9 +1,3 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+# درباره من
 
-::github{repo="saicaca/fuwari"}
-
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+> سلام! به بلاگ من خوش اومدید. من نرگس شفازاده هستم، توسعه‌دهنده و مدیر محصول که عاشق ساختن چیزهای باحاله و یاد گرفتن در این مسیر. اینجا قراره تجربه‌های دست اول خودم رو از دنیای پرهیجان توسعه نرم‌افزار و مدیریت محصول باهاتون به اشتراک بذارم. از چالش‌های فنی گرفته تا استراتژی‌های محصول و درس‌هایی که تو این سال‌ها یاد گرفتم، همه رو اینجا پیدا می‌کنید. هدفم اینه که این فضا یه جایی باشه برای یادگیری، تبادل نظر و رشد مشترک. پس اگه شما هم به این حوزه‌ها علاقه دارید، خوشحال میشم همراهم باشید.
