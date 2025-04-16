@@ -92,3 +92,7 @@ lang: ''
 ### پیام نهایی کتاب:
 
 AI صرفاً یک فناوری نیست، بلکه نیرویی است که آینده اقتصاد، سیاست و روابط انسانی را بازتعریف می‌کند. نویسنده بر لزوم همزیستی بین هوش ماشینی و قلب انسانی تأکید می‌کند.
+
+[لینک خرید کتاب](https://as-book.ir/book/ai-superpowers-china-silicon-valley-and-the-new-wo-6125/?utm_medium=PPC&utm_source=Torob)
+
+[لینک نرم افزاری که با ان بتوانید کتاب را در دسکتاب مطالعه کنید](https://calibre-ebook.com/download)
