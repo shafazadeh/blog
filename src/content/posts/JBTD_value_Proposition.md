@@ -3,7 +3,7 @@ title: 'تفاوت میان ‘Jobs to Be Done’ و ‘ارزش پیشنهاد�
 published: 2024-06-26
 description: ''
 image: ''
-tags: []
+tags: [استراتژی محصول]
 category: 'product managment'
 draft: false
 lang: ''

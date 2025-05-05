@@ -1,6 +1,6 @@
 ---
 title: 'معرفی کتاب گذر از شکاف '
-published: 2025-02-11
+published: 2024-12-11
 description: ''
 image: ''
 tags: [مدیریت محصول]

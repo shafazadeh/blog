@@ -1,9 +1,9 @@
 ---
 title: انواع رویکردها به چشم‌انداز محصول (Product Vision Types)
-published: 2025-01-05
+published: 2025-02-01
 description: ''
 image: ''
-tags: [Product Vision Types]
+tags: [استراتژی محصول]
 category: 'product managment'
 draft: false
 lang: ''
