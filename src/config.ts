@@ -2,7 +2,7 @@ import type { LicenseConfig, NavBarConfig, ProfileConfig, SiteConfig } from './t
 import { LinkPreset } from './types/config';
 
 export const siteConfig: SiteConfig = {
-	title: 'با عشق کد می‌زنم، با رؤیا محصول می‌سازم!',
+	title: '',
 	subtitle: 'Demo Site',
 	lang: 'fa', // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
 	themeColor: {
@@ -49,7 +49,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: 'assets/images/demo-avatar.png', // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: 'نرگس شفازاده',
-	bio: ' برنامه‌نویس خلاق و عاشق چالش‌ام که از حل مسائل پیچیده لذت می‌برم و الان دارم با ذوق مدیریت پروژه رو یاد می‌گیرم تا ایده‌هام رو به واقعیت تبدیل کنم.',
+	bio: ' از حل مسئله لذت می‌ برم ودوست دارم این مهارت رو در جهت خلق کردن که برای من ارزش محسوب میشه استفاده کنم در حال حاضر وقتم رو روی یادگیری و ساختن نرم افزار ها و  راهکارهای نرم افزاری اختصاص میدم  .',
 	links: [
 		{
 			name: 'Steam',
