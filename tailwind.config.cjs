@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import { fontFamily } from 'tailwindcss/defaultTheme';
+
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
@@ -7,9 +9,9 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				// sans: ['Roboto', 'sans-serif', ...defaultTheme.fontFamily.sans],
-				body: ['Light', 'Black', 'Bold', 'Medium', 'UltraLight'],
+				sans: ['Vazirmatn RD', ...fontFamily.sans],
 			},
+			transform: 'rotate(-15deg)',
 		},
 	},
 	plugins: [require('@tailwindcss/typography')],

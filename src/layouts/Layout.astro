@@ -19,6 +19,7 @@ import { defaultFavicons } from "../constants/icon";
 import type { Favicon } from "../types/config";
 import { url, pathsEqual } from "../utils/url-utils";
 import "katex/dist/katex.css";
+import '@/assets/styles/app.css';
 
 interface Props {
 	title?: string;
@@ -108,7 +109,7 @@ const bannerOffset =
 				  media={favicon.theme && `(prefers-color-scheme: ${favicon.theme})`}
 			/>
 		))}
-
+<link rel="preload" href="/fonts/Vazirmatn-RD[wght].woff2" as="font" type="font/woff2" crossorigin />
 		<!-- Set the theme before the page is rendered to avoid a flash -->
 		<script is:inline define:vars={{DEFAULT_THEME, LIGHT_MODE, DARK_MODE, AUTO_MODE, BANNER_HEIGHT_EXTEND, PAGE_WIDTH, configHue}}>
 			// Load the theme from local storage
@@ -481,6 +482,7 @@ window.onresize = () => {
 <script>
 import PhotoSwipeLightbox from "photoswipe/lightbox"
 import "photoswipe/style.css"
+import '../assets/styles/app.css';
 
 let lightbox: PhotoSwipeLightbox
 let pswp = import("photoswipe")
