@@ -43,7 +43,7 @@ const coverWidth = "28%";
 const { remarkPluginFrontmatter } = await entry.render();
 ---
 <div class:list={["card-base flex flex-col-reverse md:flex-col w-full rounded-[var(--radius-large)] overflow-hidden relative", className]} style={style}>
-    <div class:list={["pl-6 md:pl-9 pr-6 md:pr-2 pt-6 md:pt-7 pb-6 relative", {"w-full md:w-[calc(100%_-_52px_-_12px)]": !hasCover, "w-full md:w-[calc(100%_-_var(--coverWidth)_-_12px)]": hasCover}]}>
+    <div class:list={["pl-6 md:pl-9 pr-6 md:pr-2 pt-6 md:pt-7 pb-6 relative", {"w-full md:w-[94%] self-end": !hasCover, "w-full md:w-[94%]": hasCover}]}>
         <a href={url}
            class="transition group w-full block font-bold mb-3 text-2xl text-90
         hover:text-[var(--primary)] dark:hover:text-[var(--primary)]
@@ -59,7 +59,7 @@ const { remarkPluginFrontmatter } = await entry.render();
         <PostMetadata published={published} updated={updated} tags={tags} category={category} hideTagsForMobile={true} hideUpdateDate={true} class="mb-4"></PostMetadata>
 
         <!-- description -->
-        <div class:list={["transition text-75 mb-3.5 pr-4", {"line-clamp-2 md:line-clamp-1": !description}]}>
+        <div dir="rtl" class:list={["transition text-75 mb-3.5 pr-4", {"line-clamp-2 md:line-clamp-1": !description}]}>
             { description || remarkPluginFrontmatter.excerpt }
         </div>
 
@@ -71,7 +71,16 @@ const { remarkPluginFrontmatter } = await entry.render();
         </div>
 
     </div>
-
+    {!hasCover &&
+        <a href={url} aria-label={title} class="!hidden md:!flex btn-regular w-[3.25rem]
+         absolute left-3 top-3 bottom-3 rounded-xl bg-[var(--enter-btn-bg)]
+         hover:bg-[var(--enter-btn-bg-hover)] active:bg-[var(--enter-btn-bg-active)] active:scale-95
+        ">
+            <Icon name="material-symbols:chevron-left-rounded"
+                  class="transition text-[var(--primary)] text-4xl mx-auto">
+            </Icon>
+        </a>
+    }
     {hasCover && <a href={url} aria-label={title}
                     class:list={["group",
                         "max-h-[20vh] md:max-h-none mx-4 mt-4 -mb-2 md:mb-0 md:mx-0 md:mt-0",
@@ -88,16 +97,7 @@ const { remarkPluginFrontmatter } = await entry.render();
         </ImageWrapper>
     </a>}
 
-    {!hasCover &&
-        <a href={url} aria-label={title} class="!hidden md:!flex btn-regular w-[3.25rem]
-         absolute right-3 top-3 bottom-3 rounded-xl bg-[var(--enter-btn-bg)]
-         hover:bg-[var(--enter-btn-bg-hover)] active:bg-[var(--enter-btn-bg-active)] active:scale-95
-        ">
-            <Icon name="material-symbols:chevron-right-rounded"
-                  class="transition text-[var(--primary)] text-4xl mx-auto">
-            </Icon>
-        </a>
-    }
+
 </div>
 <div class="transition border-t-[1px] border-dashed mx-6 border-black/10 dark:border-white/[0.15] last:border-t-0 md:hidden"></div>
 
