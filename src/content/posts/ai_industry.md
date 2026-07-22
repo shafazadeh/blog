@@ -1,6 +1,6 @@
 ---
 title: 'صنعت هوش مصنوعی: چیستی، ابزارها، فرصت‌ها و زنجیره ارزش آن'
-published: 2025-01-06
+published: 2024-01-06
 description: ''
 image: ''
 tags: [ai]

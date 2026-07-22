@@ -1,6 +1,6 @@
 ---
 title: انواع رویکردها به چشم‌انداز محصول (Product Vision Types)
-published: 2025-02-01
+published: 2024-02-01
 description: ''
 image: ''
 tags: [استراتژی محصول]

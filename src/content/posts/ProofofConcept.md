@@ -1,6 +1,6 @@
 ---
 title: تجربه من از ساخت سریع یه دموی اولیه با ابزارهای No-Code، Low-Code و Semi-Code
-published: 2025-05-12
+published: 2024-05-12
 description: ''
 image: ''
 tags: [ai]

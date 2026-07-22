@@ -1,6 +1,6 @@
 ---
 title: 'مدل پیش بینی کننده افسردگی در دانش آموزان'
-published: 2025-04-06
+published: 2024-04-06
 description: ''
 image: ''
 tags: [ai]

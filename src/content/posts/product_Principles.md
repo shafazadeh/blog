@@ -1,6 +1,6 @@
 ---
 title: اصول محصول (Product Principles)
-published: 2025-02-03
+published: 2024-02-03
 description: 'راهنمای تصمیم‌ گیری در مسیر ساخت محصولات موفق'
 image: ''
 tags: [استراتژی محصول]
