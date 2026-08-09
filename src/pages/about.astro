@@ -1,27 +1,66 @@
 ---
+import MainGridLayout from '../layouts/MainGridLayout.astro';
 
-import MainGridLayout from "../layouts/MainGridLayout.astro";
+import { getEntry } from 'astro:content';
+import { render } from 'astro:content';
+import Markdown from '@components/misc/Markdown.astro';
+import I18nKey from '../i18n/i18nKey';
+import { i18n } from '../i18n/translation';
 
-import { getEntry } from "astro:content";
-import { render } from "astro:content";
-import Markdown from "@components/misc/Markdown.astro";
-import I18nKey from "../i18n/i18nKey";
-import { i18n } from "../i18n/translation";
-
-const aboutPost = await getEntry("spec", "about");
+const aboutPost = await getEntry('spec', 'about');
 
 if (!aboutPost) {
-	throw new Error("About page content not found");
+	throw new Error('About page content not found');
 }
+const certificates = [
+	{
+		src: '/certificates/narges shafazadeh-MK-PHOMLZ.png',
+		alt: 'machine learning',
+		title: 'machine learning',
+	},
+	{
+		src: '/certificates/bozhan.png',
+		alt: 'product management',
+		title: 'product management',
+	},
+];
 
 const { Content } = await render(aboutPost);
 ---
+
 <MainGridLayout title={i18n(I18nKey.about)} description={i18n(I18nKey.about)}>
-    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
-        <div class="card-base z-10 px-9 py-6 relative w-full ">
-            <Markdown class="mt-2">
-                <Content />
-            </Markdown>
-        </div>
-    </div>
+	<div class='w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32'>
+		<div class='card-base z-10 px-9 py-6 relative w-full'>
+			<Markdown class='mt-2'>
+				<Content />
+			</Markdown>
+		</div>
+		<div class='card-base z-10 px-9 py-6 relative w-full mt-4'>
+			<Markdown class='mt-2'>
+				<p>مدارک و دوره ها</p>
+				<div class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
+					{
+						certificates.map((cert) => (
+							<a
+								href={cert.src}
+								target='_blank'
+								rel='noreferrer'
+								class='group block overflow-hidden rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition'
+							>
+								<img
+									src={cert.src}
+									alt={cert.alt}
+									loading='lazy'
+									class='w-full aspect-[4/3] object-cover transition duration-300 group-hover:scale-[1.02]'
+								/>
+								<div class='px-4 py-3'>
+									<h2 class='text-sm font-medium'>{cert.title}</h2>
+								</div>
+							</a>
+						))
+					}
+				</div>
+			</Markdown>
+		</div>
+	</div>
 </MainGridLayout>
